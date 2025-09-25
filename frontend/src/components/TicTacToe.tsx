@@ -32,7 +32,7 @@ export default function TicTacToe({ index, board, onCellClick, onWin, winner, is
             key={i}
             className="aspect-square border border-gray-500 text-2xl font-bold flex items-center justify-center disabled:opacity-50"
             onClick={() => handleClick(i)}
-            aria-label={`cell-${i}`}
+            aria-label={`board-${index}-cell-${i}`}
             disabled={!isActive || c !== null || winner !== null }
           >
             {c}
